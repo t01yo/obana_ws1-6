@@ -1,0 +1,104 @@
+/* General Tab Styling */
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #4B0082; /* Deep purple */
+}
+
+.tab button:hover {
+    background-color: #908e8e;
+}
+
+.tab button.active {
+    background-color: #4B0082;
+    color: white;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Tab Content */
+.tab-content.active {
+    display: block;
+}
+
+/* Styling for the h2 title */
+h2 {
+    color: #4B0082;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+footer {
+    color: whitesmoke;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px; /* Slightly smaller font size for smaller screens */
+    }
+
+    .tab button {
+        padding: 10px; /* Reduced padding */
+        font-size: 16px; /* Slightly smaller font size */
+    }
+
+    .tab-content {
+        padding: 15px; /* Reduced padding for tab content */
+    }
+
+    .card {
+        padding: 15px; /* Reduced padding for cards */
+    }
+
+    footer {
+        padding: 8px; /* Slightly increased padding for footer */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; /* Further reduce font size for mobile devices */
+    }
+
+    .tab button {
+        padding: 8px; /* Further reduced padding */
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .tab-content {
+        padding: 10px; /* Further reduced padding for tab content */
+    }
+
+    .card {
+        padding: 10px; /* Further reduced padding for cards */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller font size for footer on small screens */
+    }
+}
